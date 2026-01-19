@@ -69,3 +69,26 @@
 .box3 {
   background-color: grey;
 }
+
+.overflowExample {
+  width: 200px;
+  height: 100px;
+  border: 2px solid green;
+  background-color: #ccc;
+}
+
+.overflowScroll {
+  overflow: scroll;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.overflowVisible {
+  overflow: visible;
+}
