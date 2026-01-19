@@ -1,0 +1,71 @@
+.container {
+  background-color: darkblue;
+  width: 600px;
+  height: 600px;
+}
+
+.small {
+  padding: 10px 5px;
+  margin: 10px 0px;
+  border: dotted 1px #000;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top25 {
+  top: 25px;
+}
+
+.top250 {
+  top: 250px;
+}
+
+.left25 {
+  left: 25px;
+}
+
+.left150 {
+  left: 150px;
+}
+
+.bottom0 {
+  bottom: 0;
+}
+
+.doubleSize {
+  width: 400px !important;
+  height: 200px !important;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.box1 {
+  background-color: green;
+}
+
+.box2 {
+  background-color: royalblue;
+}
+
+.box3 {
+  background-color: grey;
+}
