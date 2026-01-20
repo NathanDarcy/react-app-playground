@@ -13,6 +13,9 @@ export default function CssExamplesPage() {
           <li>
             <Link to="overflow">Overflow Examples</Link>
           </li>
+          <li>
+            <Link to="background">Background Examples</Link>
+          </li>
         </ul>
       </nav>
 

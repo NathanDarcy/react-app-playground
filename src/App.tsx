@@ -5,6 +5,7 @@ import NotFound from './pages/NotFound'
 import CssExamplesPage from './pages/cssExamples/CssExamplesPage'
 import CssPositionExamplesPage from './pages/cssExamples/CssPositionExamplesPage'
 import CssOverflowExamplesPage from './pages/cssExamples/CssOverFlowExamplesPage'
+import CssBackgroundExamplesPage from './pages/cssExamples/CssBackgroundExamplesPage'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/examples" element={<CssExamplesPage />}>
           <Route path="position" element={<CssPositionExamplesPage />} />
           <Route path="overflow" element={<CssOverflowExamplesPage />} />
+          <Route path="background" element={<CssBackgroundExamplesPage />} />
         </Route>
 
         <Route path="/about" element={<AboutPage />} />

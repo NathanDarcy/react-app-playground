@@ -92,3 +92,38 @@
 .overflowVisible {
   overflow: visible;
 }
+
+.backgroundExampleDiv {
+  width: 200px;
+  height: 200px;
+  border: double 100px red;
+  margin: 100px auto;
+  padding: 20px;
+  /* background-image: url(../../assets/upside_down_sun_god.webp); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  background-clip: content-box; */
+  background: lightblue url(../../assets/upside_down_sun_god.webp) no-repeat;
+}
+
+.linearGradientExampleDiv {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+
+  background-image: linear-gradient(to top right, black, white, black);
+}
+
+.imageLinearGradientExampleDiv {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+
+  background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.2)),
+    url(../../assets/upside_down_sun_god.webp) no-repeat center / cover;
+}
+
+.textOverPicture {
+  background-color: white;
+}
