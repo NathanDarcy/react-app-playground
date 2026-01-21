@@ -1,3 +1,11 @@
+/*
+This css file is kind of jumbled. 
+Its only use it to practice examples in my example components. 
+Modularizing them to keep them isolated from other classes. 
+For the most part these would be further partitioned in a prod environment,
+and naming conventions would be much cleaner.
+*/
+
 .container {
   background-color: darkblue;
   width: 600px;
@@ -252,4 +260,55 @@
     top: 0;
     background-color: purple;
   }
+}
+
+.flexboxContainer {
+  height: 400px;
+  margin-top: 25px;
+  padding: 10px 0;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* flex-flow: row wrap; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* align-content: space-between; */
+}
+
+.flexboxItem {
+  width: 70px;
+  padding: 15px;
+  margin: 5px;
+  background-color: #06af8f;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.flexboxItem1 {
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+.flexboxItem2 {
+  flex-shrink: 3; /*shrinks 3 times faster than others*/
+}
+
+.flexboxItem3 {
+  order: 1;
+  align-self: center;
+}
+
+.flexboxItem4 {
+  align-self: flex-end;
+  flex-basis: 100px;
+}
+
+.flexboxItem5 {
+  order: -1;
+  align-self: flex-start;
+  /*grow, shrink, basis*/
+  flex: 0 1 auto;
 }

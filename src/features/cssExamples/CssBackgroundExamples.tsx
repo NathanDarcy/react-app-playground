@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { backgroundExamples } from './data/backgroundExamples'
+import { backgroundExamples } from './fragments/backgroundExamples'
 import Pagination from './components/Pagination'
 
 export default function CssBackgroundExamples() {

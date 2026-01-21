@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import Pagination from './components/Pagination'
-import { transitionExamples } from './data/transitionExamples'
-import { transformExamples } from './data/transformExamples'
+import { transitionExamples } from './fragments/transitionExamples'
+import { transformExamples } from './fragments/transformExamples'
 
 export default function CssTransitionAndAnimationExamples() {
   const [index, setIndex] = useState(0)
-  const total = transitionExamples.length + transformExamples.length
 
   const examples = [...transitionExamples, ...transformExamples]
 
@@ -15,8 +14,8 @@ export default function CssTransitionAndAnimationExamples() {
 
       <Pagination
         index={index}
-        total={total}
-        onNext={() => setIndex((i) => Math.min(i + 1, total - 1))}
+        total={examples.length}
+        onNext={() => setIndex((i) => Math.min(i + 1, examples.length - 1))}
         onPrevious={() => setIndex((i) => Math.max(i - 1, 0))}
       />
     </div>

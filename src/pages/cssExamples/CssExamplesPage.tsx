@@ -21,6 +21,9 @@ export default function CssExamplesPage() {
               Transition and Animation Examples
             </Link>
           </li>
+          <li>
+            <Link to="flexbox">Flexbox Examples</Link>
+          </li>
         </ul>
       </nav>
 

@@ -7,6 +7,7 @@ import CssPositionExamplesPage from './pages/cssExamples/CssPositionExamplesPage
 import CssOverflowExamplesPage from './pages/cssExamples/CssOverFlowExamplesPage'
 import CssBackgroundExamplesPage from './pages/cssExamples/CssBackgroundExamplesPage'
 import CssTransitionAndAnimationExamplesPage from './pages/cssExamples/CssTransitionAndAnimationExamplesPage'
+import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
             path="transition-and-animation"
             element={<CssTransitionAndAnimationExamplesPage />}
           />
+          <Route path="flexbox" element={<CssFlexboxExamplesPage />} />
         </Route>
 
         <Route path="/about" element={<AboutPage />} />
