@@ -16,6 +16,11 @@ export default function CssExamplesPage() {
           <li>
             <Link to="background">Background Examples</Link>
           </li>
+          <li>
+            <Link to="transition-and-animation">
+              Transition and Animation Examples
+            </Link>
+          </li>
         </ul>
       </nav>
 

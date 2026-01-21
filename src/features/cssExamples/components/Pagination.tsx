@@ -11,17 +11,7 @@ export default function Pagination({
   onPrevious,
 }: PaginationProps) {
   return (
-    <div
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        width: '100%',
-        background: 'white',
-        padding: '1rem',
-        borderTop: '1px solid #ccc',
-      }}
-    >
+    <div className="pagination">
       <button disabled={index === 0} onClick={onPrevious}>
         Previous
       </button>

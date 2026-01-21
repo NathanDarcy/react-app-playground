@@ -127,3 +127,129 @@
 .textOverPicture {
   background-color: white;
 }
+
+.animationHeading {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #555;
+  text-shadow: 3px 3px 10px #888;
+}
+
+.animationCard {
+  width: 200px;
+  margin: 25px auto;
+  background-color: #ccc;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 10px #777;
+  transition: box-shadow 1s ease-in-out;
+}
+
+.animationCard:hover {
+  box-shadow: 10px 10px 20px blue;
+  cursor: pointer;
+}
+
+.animationCardImage {
+  width: 100%;
+}
+
+.animationBox {
+  margin: 25px auto;
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+
+  /* transition-property: width; */
+  /* transition-duration: 1s; */
+  /* transition-delay: 1s; */
+  /* transition-timing-function: cubic-bezier(0.02, 0.95, 0.3, 0.4); */
+  /* transition: width 1s ease-in, background-color 5s ease-in-out; */
+  transition: all 1s;
+}
+
+.animationBox:hover {
+  width: 400px;
+  background-color: green;
+}
+
+.transformBox {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: purple;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+
+  transition: transform 500ms;
+}
+
+.transformBox:hover {
+  /* transform: translate(100px, 200px);
+  transform: rotate(360deg);
+  transform: scale(2, 0.5);
+  transform: skew(30deg, 20deg);
+  transform: rotate(180deg); */
+  /* transform: rotateZ(90deg); */
+  transform: scale(1.5, 1.5) rotate(360deg);
+}
+
+.animationBoxTwo {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: purple;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+
+  position: relative;
+  animation-name: dance;
+  animation-duration: 4s;
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; */
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: dance 4s ease-in 500ms 2 alternate both;
+}
+
+@keyframes dance {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: purple;
+  }
+
+  25% {
+    top: 0;
+    left: 200px;
+    background-color: green;
+  }
+
+  50% {
+    left: 200px;
+    top: 200px;
+    background-color: goldenrod;
+  }
+
+  75% {
+    left: 0;
+    top: 200px;
+    background-color: royalblue;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+    background-color: purple;
+  }
+}
