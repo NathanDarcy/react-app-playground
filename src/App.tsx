@@ -8,6 +8,7 @@ import CssOverflowExamplesPage from './pages/cssExamples/CssOverFlowExamplesPage
 import CssBackgroundExamplesPage from './pages/cssExamples/CssBackgroundExamplesPage'
 import CssTransitionAndAnimationExamplesPage from './pages/cssExamples/CssTransitionAndAnimationExamplesPage'
 import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
+import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
 
 export default function App() {
   return (
@@ -20,8 +21,12 @@ export default function App() {
           <li>
             <Link to="/examples">CSS Examples</Link>
           </li>
+          <li>
+            <Link to="/grand-hotel">Grand Hotel Tutorial Using Flexbox</Link>
+          </li>
         </ul>
       </nav>
+      <hr />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -37,6 +42,7 @@ export default function App() {
           <Route path="flexbox" element={<CssFlexboxExamplesPage />} />
         </Route>
 
+        <Route path="/grand-hotel" element={<GrandHotelPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
