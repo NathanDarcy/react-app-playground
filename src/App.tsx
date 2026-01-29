@@ -16,35 +16,35 @@ export default function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to="/examples">CSS Examples</Link>
+            <Link to='/examples'>CSS Examples</Link>
           </li>
           <li>
-            <Link to="/grand-hotel">Grand Hotel Tutorial Using Flexbox</Link>
+            <Link to='/grand-hotel'>Grand Hotel Tutorial Using Flexbox</Link>
           </li>
         </ul>
       </nav>
       <hr />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path='/' element={<HomePage />} />
 
-        <Route path="/examples" element={<CssExamplesPage />}>
-          <Route path="position" element={<CssPositionExamplesPage />} />
-          <Route path="overflow" element={<CssOverflowExamplesPage />} />
-          <Route path="background" element={<CssBackgroundExamplesPage />} />
+        <Route path='/examples' element={<CssExamplesPage />}>
+          <Route path='position' element={<CssPositionExamplesPage />} />
+          <Route path='overflow' element={<CssOverflowExamplesPage />} />
+          <Route path='background' element={<CssBackgroundExamplesPage />} />
           <Route
-            path="transition-and-animation"
+            path='transition-and-animation'
             element={<CssTransitionAndAnimationExamplesPage />}
           />
-          <Route path="flexbox" element={<CssFlexboxExamplesPage />} />
+          <Route path='flexbox' element={<CssFlexboxExamplesPage />} />
         </Route>
 
-        <Route path="/grand-hotel" element={<GrandHotelPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path='/grand-hotel' element={<GrandHotelPage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
   )

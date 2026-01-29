@@ -11,7 +11,7 @@ export default function Pagination({
   onPrevious,
 }: PaginationProps) {
   return (
-    <div className="pagination">
+    <div className='pagination'>
       <button disabled={index === 0} onClick={onPrevious}>
         Previous
       </button>

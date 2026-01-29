@@ -20,7 +20,7 @@ export default function CssPosition({
   showExtraText = false,
 }: CssPostionProps) {
   return (
-    <div className="component-outline">
+    <div className='component-outline'>
       <h3>{title}</h3>
 
       <small className={styles.small}>{description}</small>

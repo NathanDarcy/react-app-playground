@@ -8,21 +8,21 @@ export default function CssExamplesPage() {
       <nav>
         <ul>
           <li>
-            <Link to="position">Position Examples</Link>
+            <Link to='position'>Position Examples</Link>
           </li>
           <li>
-            <Link to="overflow">Overflow Examples</Link>
+            <Link to='overflow'>Overflow Examples</Link>
           </li>
           <li>
-            <Link to="background">Background Examples</Link>
+            <Link to='background'>Background Examples</Link>
           </li>
           <li>
-            <Link to="transition-and-animation">
+            <Link to='transition-and-animation'>
               Transition and Animation Examples
             </Link>
           </li>
           <li>
-            <Link to="flexbox">Flexbox Examples</Link>
+            <Link to='flexbox'>Flexbox Examples</Link>
           </li>
         </ul>
       </nav>
