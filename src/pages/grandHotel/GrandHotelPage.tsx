@@ -1,4 +1,4 @@
-import GrandHotelDashBoard from '../../features/grandHotel/GrandHotelDashboard'
+import GrandHotelDashBoard from '../../features/grandHotel/Dashboard'
 
 export default function GrandHotelPage() {
   return (
