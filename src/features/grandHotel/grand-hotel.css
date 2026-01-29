@@ -5,7 +5,7 @@
 }
 
 /*sidebar*/
-.hotel__sidebar {
+.sidebar {
   width: 10rem;
   height: 100%;
   background-color: #eee;
@@ -14,31 +14,45 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
-.hotel__menu-icon {
+.sidebar__menu-icon {
   margin-top: 3rem;
   cursor: pointer;
 }
 
-.hotel__menu-icon:hover .hotel__menu-icon-line {
+.sidebar__menu-icon:hover .sidebar__menu-icon-line {
   width: 2.5rem;
 }
 
-.hotel__menu-icon-line {
+.sidebar__menu-icon-line {
   height: 0.2rem;
   width: 2.5rem;
   background-color: #222;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
 }
 
-.hotel__menu-icon-line--1,
-.hotel__menu-icon-line--3 {
+.sidebar__menu-icon-line--1,
+.sidebar__menu-icon-line--3 {
   width: 1.8rem;
-  transition: width 0.3s;
+  transition: all 0.3s;
 }
 
-.hotel__social-icons-list {
+.sidebar__menu-icon--open .sidebar__menu-icon-line--1 {
+  transform: translateY(0.7rem) rotate(405deg);
+}
+
+.sidebar__menu-icon--open .sidebar__menu-icon-line--2 {
+  opacity: 0;
+}
+
+.sidebar__menu-icon--open .sidebar__menu-icon-line--3 {
+  transform: translateY(-0.7rem) rotate(-45deg);
+}
+
+.sidebar__social-icons-list {
   list-style: none;
   padding: 0;
   height: 25rem;
@@ -48,17 +62,17 @@
   align-items: center;
 }
 
-.hotel__social-icons-link {
+.sidebar__social-icons-link {
   font-size: 2rem;
   color: #777;
 }
 
-.hotel__social-icons-link:hover {
+.sidebar__social-icons-link:hover {
   color: #deaa86;
   transition: color 0.3s;
 }
 
-.hotel__year {
+.sidebar__year {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #555;
@@ -66,8 +80,131 @@
 /*end sidebar*/
 
 /*navigation*/
-.hotel__navigation {
-  margin-left: 10rem;
+.navigation {
   position: fixed;
+  left: -30rem; /*width of sidebar is 10, 40-10 = 30*/
+  width: 40rem;
+  height: 100%;
+  background:
+    linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, 0.8)),
+    url(./images/nav-bg.jpeg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: left 0.6s cubic-bezier(1, 0, 0, 1);
 }
+
+.navigation--open {
+  left: 10rem;
+}
+
+.navigation__heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  color: #deaa86;
+  text-align: center;
+}
+
+.navigation__search {
+  position: relative;
+}
+
+.navigation__search-input {
+  width: 30rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #deaa86;
+  letter-spacing: 0.1rem;
+  outline: none;
+  border: 0.1rem solid #555;
+  border-radius: 10rem;
+  transition: background-color 0.3s;
+}
+
+.navigation__search-input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation__search-btn {
+  border: none;
+  background-color: transparent;
+  color: #deaa86;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.navigation__search-btn:focus {
+  outline: none;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list-item {
+  position: relative;
+}
+
+.navigation__link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navigation__link:before {
+  content: '';
+  width: 0rem;
+  height: 0.1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+  transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation__link:after {
+  content: '';
+  width: 0rem;
+  height: 0.1rem;
+  background-color: #deaa86;
+  position: absolute;
+  top: 1rem;
+  right: -4rem;
+  transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.navigation__link:hover {
+  color: #deaa86;
+}
+
+.navigation__link:hover:before,
+.navigation__link:hover:after {
+  width: 3rem;
+}
+
+.navigation__copyright {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
 /*end navigation*/
