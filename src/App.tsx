@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from 'react-router'
+import { Link, Route, Routes, useLocation } from 'react-router'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import NotFound from './pages/NotFound'
@@ -11,22 +11,30 @@ import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
 import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
 
 export default function App() {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/examples'>CSS Examples</Link>
-          </li>
-          <li>
-            <Link to='/grand-hotel'>Grand Hotel Tutorial Using Flexbox</Link>
-          </li>
-        </ul>
-      </nav>
-      <hr />
+      {isHomePage && (
+        <>
+          <nav>
+            <ul>
+              <li>
+                <Link to='/'>Home</Link>
+              </li>
+              <li>
+                <Link to='/examples'>CSS Examples</Link>
+              </li>
+              <li>
+                <Link to='/grand-hotel'>
+                  Grand Hotel Tutorial Using Flexbox
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <hr />
+        </>
+      )}
 
       <Routes>
         <Route path='/' element={<HomePage />} />

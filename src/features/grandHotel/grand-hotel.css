@@ -4,8 +4,61 @@
   /* block-level styles */
 }
 
-/* example */
-/* .hotel__test {
-  color: red;
-  font-weight: bold;
-} */
+.hotel__sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel__menu-icon {
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.hotel__menu-icon:hover .hotel__menu-icon-line {
+  width: 2.5rem;
+}
+
+.hotel__menu-icon-line {
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.hotel__menu-icon-line--1,
+.hotel__menu-icon-line--3 {
+  width: 1.8rem;
+  transition: width 0.3s;
+}
+
+.hotel__social-icons-list {
+  list-style: none;
+  padding: 0;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hotel__social-icons-link {
+  font-size: 2rem;
+  color: #777;
+}
+
+.hotel__social-icons-link:hover {
+  color: #deaa86;
+  transition: color 0.3s;
+}
+
+.hotel__year {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #555;
+}
