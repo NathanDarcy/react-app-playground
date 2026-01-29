@@ -49,7 +49,7 @@
 }
 
 .sidebar__menu-icon--open .sidebar__menu-icon-line--3 {
-  transform: translateY(-0.7rem) rotate(-45deg);
+  transform: translateY(-0.7rem) rotate(-405deg);
 }
 
 .sidebar__social-icons-list {
