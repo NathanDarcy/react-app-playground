@@ -15,7 +15,9 @@ export default function Navigation({ isOpen }: NavigationProps) {
       <NavigationList />
 
       <div className='navigation__copyright'>
-        <p>&copy; 2026. Grand Hotel. All rights reserved</p>
+        <p>
+          &copy; {new Date().getFullYear()}. Grand Hotel. All rights reserved
+        </p>
       </div>
     </nav>
   )
