@@ -9,6 +9,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+  --sidebar-width: 10rem;
+}
+
 .pagination {
   display: flex;
   align-items: center;
