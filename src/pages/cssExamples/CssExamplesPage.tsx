@@ -24,6 +24,9 @@ export default function CssExamplesPage() {
           <li>
             <Link to='flexbox'>Flexbox Examples</Link>
           </li>
+          <li>
+            <Link to='grid'>Grid Examples</Link>
+          </li>
         </ul>
       </nav>
 

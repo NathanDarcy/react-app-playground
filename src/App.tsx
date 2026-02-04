@@ -9,6 +9,7 @@ import CssBackgroundExamplesPage from './pages/cssExamples/CssBackgroundExamples
 import CssTransitionAndAnimationExamplesPage from './pages/cssExamples/CssTransitionAndAnimationExamplesPage'
 import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
 import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
+import CssGridExamplesPage from './pages/cssExamples/CssGridExamplesPage'
 
 export default function App() {
   const location = useLocation()
@@ -48,6 +49,7 @@ export default function App() {
             element={<CssTransitionAndAnimationExamplesPage />}
           />
           <Route path='flexbox' element={<CssFlexboxExamplesPage />} />
+          <Route path='grid' element={<CssGridExamplesPage />} />
         </Route>
 
         <Route path='/grand-hotel' element={<GrandHotelPage />} />
