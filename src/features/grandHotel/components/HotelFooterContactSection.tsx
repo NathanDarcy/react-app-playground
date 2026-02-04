@@ -1,6 +1,6 @@
 export default function HotelFooterContactSection() {
   return (
-    <div className='contact'>
+    <div className='hotel__contact'>
       <h3 className='hotel__footer-heading'>Contact</h3>
 
       <p>Sign up for news</p>

@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: var(--sidebar-z-index);
 }
 
 .sidebar__menu-icon {
@@ -106,6 +106,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 5;
   transition: left 0.6s cubic-bezier(1, 0, 0, 1);
 }
 
@@ -668,3 +669,184 @@
 }
 
 /* end footer */
+
+/* responsive design medium screens*/
+@media (max-width: 1400px) {
+  .hotel__customers-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel__customer-card:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .hotel__main-part {
+    flex-direction: column;
+  }
+
+  .hotel__footer-list {
+    display: flex;
+  }
+
+  .hotel__footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+/* responsive design medium-sm screens*/
+@media (max-width: 1200px) {
+  .hotel__about-us {
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+
+  .hotel__about-us-content {
+    margin-bottom: 13rem;
+  }
+
+  .hotel__about-us-image {
+    width: 25rem;
+  }
+}
+
+/* responsive design sm screens*/
+@media (max-width: 900px) {
+  .hotel__banner {
+    text-align: center;
+  }
+
+  .hotel__banner-heading {
+    font-size: 4.7rem;
+  }
+
+  .hotel__banner-paragraph {
+    font-size: 2.6rem;
+  }
+
+  .hotel__banner-btn {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* responsive design for xsm screens*/
+@media (max-width: 775px) {
+  .hotel__customer-card {
+    flex-direction: column;
+    width: 20rem;
+  }
+
+  .hotel__customer-image {
+    margin-left: 0;
+  }
+
+  .hotel__footer-list {
+    display: block;
+  }
+
+  .hotel__creator-part {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hotel__copyright-text {
+    order: 1;
+  }
+}
+
+/*responsive design for xxsm screens*/
+@media (max-width: 500px) {
+  .navigation {
+    width: 28rem;
+  }
+
+  .navigation__search-input {
+    width: 20rem;
+  }
+
+  .hotel__header-heading {
+    font-size: 2rem;
+    margin: auto 0;
+  }
+
+  .hotel__banner {
+    height: 100%;
+    margin-top: -10rem;
+  }
+
+  .hotel__banner-heading {
+    font-size: 3rem;
+  }
+
+  .hotel__banner-paragraph {
+    font-size: 2rem;
+  }
+
+  .hotel__about-us {
+    padding-bottom: 15rem;
+  }
+
+  .hotel__about-us-heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hotel__about-us-content {
+    padding: 5rem;
+  }
+
+  .hotel__sub-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hotel__common-heading {
+    font-size: 2rem;
+  }
+
+  .hotel__common-underline--small {
+    width: 5rem;
+  }
+
+  .hotel__common-underline--big {
+    width: 12rem;
+  }
+
+  .hotel__rooms-card-heading {
+    font-size: 1.5rem;
+  }
+
+  .hotel__rooms-price {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .hotel__rooms-card-btn {
+    width: 12rem;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .hotel__customers-paragraph {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .hotel__main-part {
+    padding: 2rem;
+  }
+
+  .hotel__footer-input {
+    width: 12rem;
+  }
+
+  .hotel__image-wrapper {
+    width: 9rem;
+  }
+
+  .hotel__about-us-image {
+    width: 13rem;
+  }
+}

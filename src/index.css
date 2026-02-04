@@ -11,6 +11,7 @@ body {
 
 :root {
   --sidebar-width: 10rem;
+  --sidebar-z-index: 10;
 }
 
 .pagination {
