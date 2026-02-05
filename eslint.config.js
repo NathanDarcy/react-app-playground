@@ -34,6 +34,7 @@ export default defineConfig([
       'jsx-quotes': ['error', 'prefer-single'],
       'react/react-in-jsx-scope': 'off',
       'vitest/no-focused-tests': 'error',
+      'prettier/prettier': 'error',
     },
     settings: {
       react: {
