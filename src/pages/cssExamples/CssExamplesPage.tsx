@@ -8,6 +8,9 @@ export default function CssExamplesPage() {
       <nav>
         <ul>
           <li>
+            <Link to='/'>Back Home</Link>
+          </li>
+          <li>
             <Link to='position'>Position Examples</Link>
           </li>
           <li>

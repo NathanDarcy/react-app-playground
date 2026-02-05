@@ -10,6 +10,7 @@ import CssTransitionAndAnimationExamplesPage from './pages/cssExamples/CssTransi
 import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
 import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
 import CssGridExamplesPage from './pages/cssExamples/CssGridExamplesPage'
+import FurnitureStorePage from './pages/furnitureStore/FurnitureStorePage'
 
 export default function App() {
   const location = useLocation()
@@ -29,6 +30,11 @@ export default function App() {
               <li>
                 <Link to='/grand-hotel'>
                   Grand Hotel Tutorial Using Flexbox
+                </Link>
+              </li>
+              <li>
+                <Link to='/furniture-store'>
+                  Furniture Store Tutorial Using Grid
                 </Link>
               </li>
             </ul>
@@ -53,6 +59,7 @@ export default function App() {
         </Route>
 
         <Route path='/grand-hotel' element={<GrandHotelPage />} />
+        <Route path='/furniture-store' element={<FurnitureStorePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
