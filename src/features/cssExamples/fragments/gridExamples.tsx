@@ -120,4 +120,30 @@ export const gridExamples = [
       <div className='Grid__footer'>Footer</div>
     </div>
   </>,
+
+  <>
+    <h3>align grid items and tracks</h3>
+    <div className='Grid__container--4'>
+      <div className='Grid__item Grid__item--1'>item 1</div>
+      <div className='Grid__item Grid__item--2'>item 2</div>
+      <div className='Grid__item Grid__item--3'>item 3</div>
+      <div className='Grid__item Grid__item--4'>item 4</div>
+      <div className='Grid__item Grid__item--5'>item 5</div>
+      <div className='Grid__item Grid__item--6'>item 6</div>
+    </div>
+  </>,
+
+  <>
+    <h3>auto-fills</h3>
+    <div className='Grid__container--5'>
+      <div className='Grid__item Grid__item--1'>item 1</div>
+      <div className='Grid__item Grid__item--2'>item 2</div>
+      <div className='Grid__item Grid__item--3'>item 3</div>
+      <div className='Grid__item Grid__item--4'>item 4</div>
+      <div className='Grid__item Grid__item--5'>item 5</div>
+      <div className='Grid__item Grid__item--6'>item 6</div>
+      <div className='Grid__item Grid__item--7'>item 7</div>
+      <div className='Grid__item Grid__item--8'>item 8</div>
+    </div>
+  </>,
 ]

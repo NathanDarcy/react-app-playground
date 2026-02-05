@@ -101,9 +101,16 @@
 .Grid__item--6 {
   background-color: blueviolet;
 }
+.Grid__item--7 {
+  background-color: greenyellow;
+}
+.Grid__item--8 {
+  background-color: darkslategray;
+}
 
 .Grid__container--2,
-.Grid__container--3 {
+.Grid__container--3,
+.Grid__container--4 {
   width: 800px;
   height: 500px;
   background-color: #efefef;
@@ -116,7 +123,8 @@
 }
 
 .Grid__container--2 div,
-.Grid__container--3 div {
+.Grid__container--3 div,
+.Grid__container--4 div {
   background-color: royalblue;
   font-size: 1.5rem;
   text-align: center;
@@ -193,4 +201,36 @@
 
 .Grid__container--3 .Grid__footer {
   grid-area: footer;
+}
+
+.Grid__container--4 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  justify-items: end; /*stretch (def), start, end, center*/
+  align-items: end; /*stretch (def), start, end center*/
+}
+
+.Grid__container--4 .Grid__item--3 {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.Grid__container--4 .Grid__item--4 {
+  justify-self: center;
+  align-self: center;
+  grid-row: 2/4;
+  grid-column: 1/-1;
+}
+
+.Grid__container--4 .Grid__item--5 {
+  justify-self: start;
+  align-self: center;
+}
+
+.Grid__container--5 {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 80px); */ /*empty cols at the end*/
+  grid-template-columns: repeat(auto-fit, 80px);
 }
