@@ -15,58 +15,62 @@ export default function Topbar() {
   return (
     <div className='topbar'>
       {/* Social Icons */}
-      <ul className='topbar__social-icons'>
-        <li className='topbar__social-item'>
-          <a href='#' className='topbar__social-link'>
-            <FaFacebook className='topbar__social-icon' />
-          </a>
-        </li>
-        <li className='topbar__social-item'>
-          <a href='#' className='topbar__social-link'>
-            <FaLinkedin className='topbar__social-icon' />
-          </a>
-        </li>
-        <li className='topbar__social-item'>
-          <a href='#' className='topbar__social-link'>
-            <FaTwitter className='topbar__social-icon' />
-          </a>
-        </li>
-        <li className='topbar__social-item'>
-          <a href='#' className='topbar__social-link'>
-            <FaInstagram className='topbar__social-icon' />
-          </a>
-        </li>
-      </ul>
-
-      {/* First Nav */}
-      <nav className='topbar__first-nav'>
-        <ul className='first-nav'>
-          <li className='first-nav__item'>
-            <a href='#' className='first-nav__link'>
-              <FaSignInAlt className='first-nav__icon' />
-              Sign Up / Log In
+      <div className='topbar__social'>
+        <ul className='social__icon-list'>
+          <li className='social__item'>
+            <a href='#' className='social__link'>
+              <FaFacebook className='social__icon' />
             </a>
           </li>
-          <li className='first-nav__item'>
-            <a href='#' className='first-nav__link'>
-              <FaShoppingCart className='first-nav__icon' />
-              Cart(<span>2 Items</span>)
+          <li className='social__item'>
+            <a href='#' className='social__link'>
+              <FaLinkedin className='social__icon' />
             </a>
           </li>
-          <li className='first-nav__item'>
-            <a href='#' className='first-nav__link'>
-              <FaTruck className='first-nav__icon' />
-              Track Order
+          <li className='social__item'>
+            <a href='#' className='social__link'>
+              <FaTwitter className='social__icon' />
             </a>
           </li>
-          <li className='first-nav__item'>
-            <a href='#' className='first-nav__link'>
-              <FaHeart className='first-nav__icon' />
-              Wishlist
+          <li className='social__item'>
+            <a href='#' className='social__link'>
+              <FaInstagram className='social__icon' />
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
+
+      {/* First Nav */}
+      <div className='topbar__first-nav'>
+        <nav className='first-nav'>
+          <ul className='first-nav__list'>
+            <li className='first-nav__item'>
+              <a href='#' className='first-nav__link'>
+                <FaSignInAlt className='first-nav__icon' />
+                Sign Up / Log In
+              </a>
+            </li>
+            <li className='first-nav__item'>
+              <a href='#' className='first-nav__link'>
+                <FaShoppingCart className='first-nav__icon' />
+                Cart(<span>2 Items</span>)
+              </a>
+            </li>
+            <li className='first-nav__item'>
+              <a href='#' className='first-nav__link'>
+                <FaTruck className='first-nav__icon' />
+                Track Order
+              </a>
+            </li>
+            <li className='first-nav__item'>
+              <a href='#' className='first-nav__link'>
+                <FaHeart className='first-nav__icon' />
+                Wishlist
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       {/* Search Form */}
       <div className='topbar__search'>

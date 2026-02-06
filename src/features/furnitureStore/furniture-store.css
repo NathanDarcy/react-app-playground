@@ -16,7 +16,7 @@
   margin-top: 1.6rem;
 }
 
-.topbar__social-icons {
+.topbar__social {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
   list-style: none;
@@ -25,13 +25,13 @@
   align-items: center;
 }
 
-.topbar__social-icon {
+.social__icon {
   font-size: 1.8rem;
   color: #12376e;
   transition: all 0.2s;
 }
 
-.topbar__social-icon:hover {
+.social__icon:hover {
   color: #34598f;
   transform: rotateZ(360deg);
 }
@@ -41,7 +41,7 @@
   grid-row: 1 / 2;
 }
 
-.first-nav {
+.first-nav__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   list-style: none;
