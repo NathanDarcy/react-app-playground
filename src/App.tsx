@@ -11,6 +11,7 @@ import CssFlexboxExamplesPage from './pages/cssExamples/CssFlexboxExamplesPage'
 import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
 import CssGridExamplesPage from './pages/cssExamples/CssGridExamplesPage'
 import FurnitureStorePage from './pages/furnitureStore/FurnitureStorePage'
+import FSPlannerPage from './pages/fsPlanner/FSPlannerPage'
 
 export default function App() {
   const location = useLocation()
@@ -26,6 +27,9 @@ export default function App() {
               </li>
               <li>
                 <Link to='/examples'>CSS Examples</Link>
+              </li>
+              <li>
+                <Link to='/fs-planner'>FS Planner Tool</Link>
               </li>
               <li>
                 <Link to='/grand-hotel'>
@@ -58,6 +62,7 @@ export default function App() {
           <Route path='grid' element={<CssGridExamplesPage />} />
         </Route>
 
+        <Route path='/fs-planner' element={<FSPlannerPage />} />
         <Route path='/grand-hotel' element={<GrandHotelPage />} />
         <Route path='/furniture-store' element={<FurnitureStorePage />} />
         <Route path='/about' element={<AboutPage />} />
