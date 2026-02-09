@@ -12,6 +12,7 @@ import GrandHotelPage from './pages/grandHotel/GrandHotelPage'
 import CssGridExamplesPage from './pages/cssExamples/CssGridExamplesPage'
 import FurnitureStorePage from './pages/furnitureStore/FurnitureStorePage'
 import FSPlannerPage from './pages/fsPlanner/FSPlannerPage'
+import Navbar from './components/nav/Navbar'
 
 export default function App() {
   const location = useLocation()
@@ -19,32 +20,15 @@ export default function App() {
   return (
     <>
       {isHomePage && (
-        <>
-          <nav>
-            <ul>
-              <li>
-                <Link to='/'>Home</Link>
-              </li>
-              <li>
-                <Link to='/examples'>CSS Examples</Link>
-              </li>
-              <li>
-                <Link to='/fs-planner'>FS Planner Tool</Link>
-              </li>
-              <li>
-                <Link to='/grand-hotel'>
-                  Grand Hotel Tutorial Using Flexbox
-                </Link>
-              </li>
-              <li>
-                <Link to='/furniture-store'>
-                  Furniture Store Tutorial Using Grid
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <hr />
-        </>
+        <Navbar
+          links={[
+            <Link to='/'>Home</Link>,
+            <Link to='/examples'>CSS Examples</Link>,
+            <Link to='/fs-planner'>FS-Planner</Link>,
+            <Link to='/grand-hotel'>Grand Hotel-Flexbox</Link>,
+            <Link to='/furniture-store'>Furniture Store-Grid</Link>,
+          ]}
+        />
       )}
 
       <Routes>

@@ -1,0 +1,49 @@
+.Modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.Modal__content {
+  background: #fff;
+  padding: 1.5rem;
+  min-width: 300px;
+  max-width: 50vw;
+  min-height: 200px;
+  max-height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.Modal__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.Modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.Modal__body {
+  flex: 1;
+  overflow-y: auto;
+}
